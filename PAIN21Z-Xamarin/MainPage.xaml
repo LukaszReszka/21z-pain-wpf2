@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PAIN21Z_Xamarin.MainPage"
+             Title="MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#006600" Padding="24" CornerRadius="0">
+            <Label Text="PAIN21Z - lab. WPF2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Autor: Łukasz Reszka (300257)" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Aplikacja mobilna w środowisku Xamarin, wykorzystująca model nawigacji w postaci karuzeli." FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Link do repozytorium: "/>
+                        <Span Text="https://gitlab-stud.elka.pw.edu.pl/lreszka/21z-pain-wpf2" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>

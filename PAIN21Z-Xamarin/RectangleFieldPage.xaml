@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pain21z_xamarin="clr-namespace:PAIN21Z_Xamarin"
+             xmlns:local="clr-namespace:PAIN21Z_Xamarin"
+             x:Class="PAIN21Z_Xamarin.RectangleFieldPage"
+             Title="RectangleFieldPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#006600" Padding="24" CornerRadius="0">
+            <Label Text="Pole figury" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Pole prostopadłościanu" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Długość pierwszego boku:" FontSize="16" Padding="30,0,30,0"/>
+        <Entry x:Name="a_field"
+               Text= ""
+               MaxLength="10"
+               ClearButtonVisibility="WhileEditing"
+               Keyboard="Numeric"
+               TextChanged="OnEntryAValChanged"
+               HorizontalTextAlignment="Center"/>
+
+        <Label Text="Długość drugiego boku:" FontSize="16" Padding="30,0,30,0"/>
+        <Entry x:Name="b_field"
+               Text= ""
+               MaxLength="10"
+               ClearButtonVisibility="WhileEditing"
+               Keyboard="Numeric"
+               TextChanged="OnEntryBValChanged"
+               HorizontalTextAlignment="Center"/>
+
+        <Button x:Name="calcFieldButton"
+                Text="Oblicz pole"
+                Clicked="OnButtonClicked"/>
+
+        <Label Text="Wynik:" FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Entry x:Name="result"
+               Text= ""
+               ClearButtonVisibility="WhileEditing"
+               Keyboard="Numeric"
+               IsReadOnly="True"
+               HorizontalTextAlignment="Center"/>
+
+
+    </StackLayout>
+
+</ContentPage>
